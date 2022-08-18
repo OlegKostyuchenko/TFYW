@@ -1,0 +1,149 @@
+.header {
+    background-color: rgb(254, 249, 199);
+    border-radius: 15px;
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 10% 3%;
+}
+
+.headerLink {
+
+    border-radius: 15px;
+    padding: 15px 0;
+    display: flex;
+    width: 60%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    font-size: 16px;
+}
+
+.tasks {
+    display: flex;
+    padding: 1% 2%;
+    width: 32%;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.tasks:hover {
+    background-color: rgb(2, 102, 119);
+    transition: 0.5s;
+}
+
+.tasks p {
+    font-size: 25px;
+    color: black;
+    margin: 0;
+    padding: 8px 0;
+}
+
+.tasks-link {
+    margin: 9px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.tasks-link a:visited {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.tasks-link a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+
+}
+
+.tasks-link a:hover {
+    text-decoration: none;
+    color: rgb(252, 225, 129);
+    font-size: 19px;
+    transition: 0.5s;
+}
+
+
+.contact:active {
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+}
+
+.contact:hover {
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.profile:active {
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+}
+
+.profile:hover {
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.profile {
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.contact {
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.contact:visited {
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.profile:visited {
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+}
+
+button {
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: none;
+    font-size: 18px;
+    background-color: rgb(2, 102, 119);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    color: rgb(254, 249, 199);
+    padding-left: 35px;
+    padding-right: 35px;
+    transition: 0.5s;
+}
+
+.line {
+    border-left: 2px solid black;
+    height: 28px;
+}

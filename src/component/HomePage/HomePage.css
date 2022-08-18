@@ -1,0 +1,16 @@
+.welcomeBlock {
+    background-color: rgb(237, 234, 229);
+    margin: 0 10% 3%;
+    border-radius: 15px;
+    padding: 50px 0;
+}
+
+p {
+    font-size: 23px;
+    color: rgb(90, 82, 82);
+}
+
+.hello {
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+}

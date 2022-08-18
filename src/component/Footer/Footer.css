@@ -1,0 +1,38 @@
+.footer {
+    background-color: rgb(252, 225, 129);
+    margin: 0 10%;
+    border-radius: 15px 15px 0 0;
+    padding-top: 1%;
+}
+
+.footer p {
+    margin: 5px;
+}
+
+.footerContact {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+
+}
+
+.footerContact a {
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footerContact a:hover {
+    text-decoration: underline;
+}
+
+.footerInfo p {
+    font-size: 18px;
+    margin: 4px 0;
+}
+
+img {
+    width: 25px;
+    height: 25px;
+}
