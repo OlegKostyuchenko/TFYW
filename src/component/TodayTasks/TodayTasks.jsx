@@ -15,7 +15,6 @@ const TodayTasks = () => {
         <div>
             <TasksList tasks={DATA} />
 
-            <input type='checkbox' />
         </div>
     );
 };

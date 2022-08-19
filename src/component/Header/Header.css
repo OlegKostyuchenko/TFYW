@@ -27,7 +27,7 @@ a {
 .tasks {
     display: flex;
     padding: 1% 2%;
-    width: 32%;
+    width: 260px;
     justify-content: center;
     flex-direction: column;
     border-radius: 15px;
@@ -138,8 +138,8 @@ button {
 
 button:hover {
     color: rgb(254, 249, 199);
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 40px;
+    padding-right: 40px;
     transition: 0.5s;
 }
 

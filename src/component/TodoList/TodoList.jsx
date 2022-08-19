@@ -11,27 +11,30 @@ const TodoList = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        props.editTask(props.id, newName);
-        setNewName('');
-        setEditing(false)
+        if (newName) {
+            props.editTask(props.id, newName);
+            setNewName('');
+            setEditing(false)
+        }
+
     }
 
     const editingTemplate = (
         <form className="stack-small" onSubmit={handleSubmit}>
             <div className="form-group">
                 <label className="todo-label" htmlFor={props.id}>
-                    New name for {props.name}
+                    {props.name}
                 </label>
                 <input id={props.id} className="input input__lg wInputEditing" type="text" onChange={handleChange} />
             </div>
             <div className="btn-group">
-                <button type="button" className="btn todo-cancel" onClick={() => setEditing(false)}>
+                <button type="button" className="btn" onClick={() => setEditing(false)}>
                     Cancel
-                    <span className="visually-hidden">renaming {props.name}</span>
+
                 </button>
-                <button type="submit" className="btn btn__primary todo-edit">
+                <button type="submit" className="btn">
                     Save
-                    <span className="visually-hidden">new name for {props.name}</span>
+
                 </button>
             </div>
         </form>
@@ -51,14 +54,14 @@ const TodoList = (props) => {
             </div>
             <div className="btn-group">
                 <button type="button" className="btn" onClick={() => setEditing(true)}>
-                    Edit <span className="visually-hidden">{props.name}</span>
+                    Изменить
                 </button>
                 <button
                     type="button"
                     className="btn btn__danger"
                     onClick={() => props.deleteTask(props.id)}
                 >
-                    Delete <span className="visually-hidden">{props.name}</span>
+                    Удалить
                 </button>
             </div>
         </div>

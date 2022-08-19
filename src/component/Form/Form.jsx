@@ -20,11 +20,11 @@ const Form = (props) => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <h2 className="label-wrapper">
+            <h1 className="label-wrapper">
                 <label htmlFor="new-todo-input" className="label__lg">
-                    What needs to be done?
+                    КАКИЕ У ВАС ЗАДАЧИ НА СЕГОДНЯ?
                 </label>
-            </h2>
+            </h1>
             <input
                 type="text"
                 id="new-todo-input"
@@ -35,7 +35,7 @@ const Form = (props) => {
                 onChange={handleChange}
             />
             <button type="submit" className="btn btn__primary btn__lg ">
-                Add
+                Добавить
             </button>
         </form>
     );

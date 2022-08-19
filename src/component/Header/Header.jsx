@@ -4,7 +4,8 @@ const Header = (props) => {
     return (
         <div className='header'>
             <div>
-                <h1>LOGO</h1>
+                <h1>TFYW</h1>
+                <p>Tasks For You Work</p>
             </div>
             <div className='headerLink'>
 

@@ -6,15 +6,15 @@ import { nanoid } from "nanoid";
 import './TasksList.css';
 
 const FILTER_MAP = {
-    All: () => true,
-    Active: (task) => !task.completed,
-    Completed: (task) => task.completed
+    Все: () => true,
+    Активные: (task) => !task.completed,
+    Завершенные: (task) => task.completed
 };
 const FILTER_NAMES = Object.keys(FILTER_MAP);
 
 const TasksList = (props) => {
     const [tasks, setTasks] = useState(props.tasks);
-    const [filter, setFilter] = useState('All');
+    const [filter, setFilter] = useState('Все');
 
 
     const toggleTaskCompleted = (id) => {
@@ -87,7 +87,6 @@ const TasksList = (props) => {
 
     return (
         <div className="tasksToday">
-            <h1>ЗАДАЧИ НА СЕГОДНЯ</h1>
             <Form addTask={addTask} />
             <div className="filters btn-group stack-exception">
                 {filterList}
